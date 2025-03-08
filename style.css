@@ -28,6 +28,7 @@ body {
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: width 1s ease-in-out;
 }
 
 .container div::before {
@@ -37,6 +38,32 @@ body {
     width: inherit;
 }
 
+
+
+/* === CONTAINER DIV - HOVER-EFFEKT === */
+.container .hover-active {
+    width: 75vw;
+}
+
+.container .hover-passive {
+    width: 25vw;
+}
+
+.container .hover-active .heading {
+    left: 37.5%;
+}
+
+.container .hover-active .buy {
+    left: 42.5%;
+}
+
+.container .hover-passive .heading {
+    left: 7.5%;
+}
+
+.container .hover-passive .buy {
+    left: 25%;
+}
 
 
 /* === PS5- / XBOX-CONTAINER === */
@@ -77,4 +104,14 @@ body {
     text-transform: uppercase;
     width: 15rem;
     padding: 1.5rem;
+}
+
+.buy.left:hover {
+    background-color: rgba(87, 84, 236, 1);
+    border: rgba(87, 84, 236, 1) solid 0.2rem;
+}
+
+.buy.right:hover {
+    background-color: rgba(28, 122, 28, 1);
+    border: rgba(28, 122, 28, 1) solid 0.2rem;
 }
