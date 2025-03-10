@@ -89,6 +89,7 @@ body {
     position: absolute;
     left: 25%;
     top: 20%;
+    transition: left 1s ease-in-out;
 }
 
 .buy {
@@ -104,6 +105,7 @@ body {
     text-transform: uppercase;
     width: 15rem;
     padding: 1.5rem;
+    transition: left 1s ease-in-out;
 }
 
 .buy.left:hover {
